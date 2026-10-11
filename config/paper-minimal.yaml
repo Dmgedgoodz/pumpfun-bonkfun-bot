@@ -1,0 +1,29 @@
+# Paper-only Pump.fun bot.
+# This file lives outside bots/ on purpose. `pump_bot` loads every YAML in
+# bots/ and will trade with a private key. Do not move this file there.
+# The runner never reads a private key and never sends a transaction.
+# Wallet below was created for this repo. It is not a Fomo app wallet.
+# Put any Fomo app pubkey in denied_pubkeys; the runner aborts if they match.
+
+name: paper-minimal
+mode: paper
+platform: pump_fun
+wallet_pubkey: "8oqsV9kYxxwputd1cDgfHEtfUELWRYmwt6HxhxNaQXoX"
+denied_pubkeys: []
+
+filters:
+  min_liquidity_usd: 10000
+  max_top_holder_share: 0.20
+
+trade:
+  buy_amount_sol: 0.05
+  take_profit_percentage: 0.50
+  stop_loss_percentage: 0.20
+  exit_strategy: tp_sl
+
+paper:
+  target_closed_trades: 50
+  starting_bankroll_sol: 10
+  csv_path: data/paper_trades.csv
+  candle_minutes: 5
+  max_pool_pages: 15

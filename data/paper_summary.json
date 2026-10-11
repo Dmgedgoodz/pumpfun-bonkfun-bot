@@ -1,0 +1,12 @@
+{
+  "mode": "paper",
+  "wallet_pubkey": "8oqsV9kYxxwputd1cDgfHEtfUELWRYmwt6HxhxNaQXoX",
+  "transactions_sent": 0,
+  "closed_trades": 50,
+  "wins": 21,
+  "win_rate": 0.42,
+  "average_return": 0.09400000000000003,
+  "max_drawdown": 0.004935834155972076,
+  "ending_equity_sol": 10.235000000000014,
+  "csv": "data/paper_trades.csv"
+}
